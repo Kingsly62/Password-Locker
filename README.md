@@ -44,5 +44,5 @@ To run the application, in your terminal:
 
 #### License
 
-- MIT ©2021 Hamida-Clinton
+- MIT ©2021 Clinton
 - [Click](https://opensource.org/civicrm/mailing/confirm?reset=1&cid=63735&sid=22975&h=fb22e32f66706d47)
