@@ -28,7 +28,7 @@ These are the behaviours/features that the application implements for use by a u
 In your terminal:
 
 - $ git clone https://github.com/Kingsly62/Password-Locker
-- $ cd Passlock
+- $ cd Password-Locker
 
 ### Running the Application
 
