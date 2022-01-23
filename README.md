@@ -35,7 +35,7 @@ In your terminal:
 To run the application, in your terminal:
 
 - $ #!/usr/bin/env python3.9
-- $ chmod +x run.py
+- $ chmod +x test.py
 - $ ./run.py
 
 ### Technologies Used
