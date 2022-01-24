@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.9
 from account import Accounts
 from password import Password
 
@@ -157,7 +158,6 @@ def main():
 
                         elif choice == 5:
                             print('Try again later')
-                            break
 
     if __name__ == ' __main__':
         main()
