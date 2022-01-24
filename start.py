@@ -1,5 +1,5 @@
-from account import Accounts, display_accounts
-from password import Password, save_page
+from account import Accounts
+from password import Password
 
 
 def create_account(firstname, lastname, username, email, password):
@@ -7,7 +7,7 @@ def create_account(firstname, lastname, username, email, password):
     return account
 
 
-def save_account(account):
+def save_page(account):
     account.save_account()
 
 
@@ -44,7 +44,7 @@ def main():
             username = input()
             print('Enter your  password')
             account = find_account(username)
-            if account.username == username and account.password == Password:
+            if account.username == username and account.password == password:
                 print('Already logged in')
                 while True:
                     print(
@@ -61,7 +61,7 @@ def main():
                         print('Provide password')
                         password = input()
 
-                        # save_page(create_page(page,password))
+                        save_page(create_account(page, password))
                     elif log_choice == 2:
                         print('Enter name to be erased')
                         page = input()
@@ -104,7 +104,7 @@ def main():
                         print('Enter passWord')
                         password = input()
 
-                        save_account(create_account(
+                        save_page(create_account(
                             firstname, lastname, username, email, password))
 
                         print('SUCCESSFULLY CREATED ACCOUNT')
@@ -125,7 +125,7 @@ def main():
                                 print('Enter your password')
                                 password = input()
 
-                                # save_page(create_page(page,password))
+                                save_page(create_account(page, password))
                             elif log_choice == 2:
                                 print('Enter name of page to delated')
 
@@ -148,8 +148,8 @@ def main():
                         break
 
                     elif choice == 4:
-                        if display_accounts():
-                            for account in display_accounts():
+                        if display_page():
+                            for account in display_page():
                                 print(f'{username}')
 
                             else:
@@ -159,5 +159,5 @@ def main():
                             print('Try again later')
                             break
 
-                        if __name__ == ' __main__':
-                            main()
+    if __name__ == ' __main__':
+        main()
