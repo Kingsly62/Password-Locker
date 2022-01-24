@@ -1,4 +1,4 @@
-from account import Accounts
+from account import Accounts, display_accounts
 from password import Password, save_page
 
 
@@ -113,3 +113,51 @@ def main():
                                 f'Welcome{username} Select the Numbers To Continue')
                             print(
                                 f'1)Save Password \n 2)Delete password \n 3)Display saved password\n 4)Logout')
+                            log_choice = int(input())
+
+                            if log_choice == 1:
+                                print('New Page')
+                                print('*'*100)
+
+                                print('Provide Name Page')
+                                page = input()
+
+                                print('Enter your password')
+                                password = input()
+
+                                # save_page(create_page(page,password))
+                            elif log_choice == 2:
+                                print('Enter name of page to delated')
+
+                                page = input()
+                                if isexist_page(page):
+                                    remove_page = (page)
+                                    delete_page(remove_page)
+
+                                else:
+                                    print(f'Page not available')
+
+                            elif log_choice == 3:
+                                if display_page():
+                                    for pag in display_page:
+                                        print
+                                print(f'{pag.page}:{pag.password}')
+                            else:
+                                print('No password saved yet')
+                    elif log_choice == 4:
+                        break
+
+                    elif choice == 4:
+                        if display_accounts():
+                            for account in display_accounts():
+                                print(f'{username}')
+
+                            else:
+                                print('No accounts Found')
+
+                        elif choice == 5:
+                            print('Try again later')
+                            break
+
+                        if __name__ == ' __main__':
+                            main()
