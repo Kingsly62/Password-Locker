@@ -67,3 +67,4 @@ def page_exists(cls, pager):
 '''
 functions displays already generated account credentials 
 '''
+# python3.9 -m venv --without-pip virtual
