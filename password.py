@@ -34,7 +34,6 @@ def delete_page(self):
     '''
 
 
-@classmethod
 def display_page(cls):
     return cls.user_passwords
 
@@ -44,7 +43,6 @@ displays new user passwords generated
 '''
 
 
-@classmethod
 def find_by_page(cls, pager):
     for pagy in cls.user_passwords:
         if pagy.page == pager:
@@ -56,7 +54,6 @@ function generates new user generated passwords
 '''
 
 
-@classmethod
 def page_exists(cls, pager):
     for pagy in cls.user_passwords:
         if pagy.page == pager:
@@ -67,4 +64,3 @@ def page_exists(cls, pager):
 '''
 functions displays already generated account credentials 
 '''
-# python3.9 -m venv --without-pip virtual
